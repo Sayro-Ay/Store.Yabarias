@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YABARIAS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img-generales/logo2.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="cabeza_pagina">
+        <header>
+            <a href="index.html" class="logo-container">
+                <img id="logo" src="img-generales/logo2.png" alt="logo">
+            </a>
+        </header>
+        <nav>
+            <ul id="barra_navegacion">
+                <li class="menu"><a href="index.html">Inicio</a></li>
+                <li class="menu"><a href="productos.html">Productos</a></li>
+                <li class="menu"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main_contacto">
+        <div class="box-info">
+            <h1>NUESTRO CONTACTO</h1>
+            <div class="data">
+                <p><i class="fa-solid fa-phone icon"></i> + 54 11 23456789</p>
+                <p><i class="fa-solid fa-envelope icon"></i> yabariasdev@gmail.com</p>
+                <p><i class="fa-solid fa-clock icon"></i> Horario: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
+                <p><i class="fa-solid fa-location-dot icon"></i>Calle Ayacucho 1234, Recoleta - CABA, CP1234 ARG</p>
+                
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567891234!2d-122.4012345!3d37.7856789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085812abc123456%3A0xabc1234567890!2s30%20Grant%20Ave%2C%20San%20Francisco%2C%20CA%2094108-5834%2C%20USA!5e0!3m2!1sen!2sus!4v1638356789123!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy"></iframe>
+                </div>
+            </div>            
+        </div>
+        <form id="form">
+            <div class="input-container">
+                <input type="text" 
+                        id="nombre" 
+                        name="nombre"
+                        placeholder="Nombre"
+                        required>
+                <i class="fa-solid fa-user icon"></i>
+            </div>
+            
+            <div class="input-container">
+                <input type="tel" 
+                        id="numero" 
+                        name="numero"
+                        placeholder="Telefono"
+                        required>
+                <i class="fa-solid fa-phone icon"></i>
+            </div>
+            
+            <div class="input-container">
+                <input type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="Correo"
+                        required>
+                <i class="fa-solid fa-envelope icon"></i>
+            </div>
+            
+            <div class="input-container">
+                <textarea id="mensaje" 
+                        name="mensaje" 
+                        rows="5"
+                        placeholder="Comentarios"
+                        required></textarea>
+            </div>
+            
+            <input type="submit" value="Enviar" class="btn-submit">
+        </form>        
+    </main>
+    <footer> 
+        <div class="cierre_pagina">
+            <ul class="redes">
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p id="copyright">@copyright - Yabarias - Derechos Reservados - 2024</p>
+    </footer>
+</body>
+</html>

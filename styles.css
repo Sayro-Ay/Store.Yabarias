@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border no aumenten el tamaño total del elemento */
+}
+
+body {
+    font-family: Arial, Monserrat; /* Fuente general */
+}
+
+
+
+
+/*-------------------------- Estilos del NAV DE TODOS --------------------------------------*/
+.cabeza_pagina {
+    background-color: #f4f4f4;  /*Color de fondo similar al blanco */
+    color: #000; /* Color del texto negro */
+    font-size: 1.4em; /* Tamaño de fuente */
+    padding: 0 10px; /* Espaciado superior e inferior, y laterales */
+    display: flex; /* Usamos flexbox para alinear el logo y la nav */
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Espacio entre el logo y la nav */
+}
+
+/* Estilo del logo */
+.logo-container {
+    margin-left: 10px; /* Espaciado a la izquierda */
+    margin-right: 10px; /* Agrega espaciado a la derecha para separar del nav */
+}
+
+/* Estilo del logo */
+#logo {
+    height: 95px; /* Ajusta la altura del logo */
+}
+
+/* Estilo de la barra de navegación */
+#barra_navegacion {
+    list-style-type: none; /* Eliminar viñetas */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin padding */
+    display: flex; /* Usar flexbox para alinear los elementos en línea */
+}
+
+/* Estilo para los elementos de la lista */
+.menu {
+    margin: 0 20px; /* Espaciado horizontal entre los elementos */
+}
+
+/* Estilo para los enlaces */
+.menu a {
+    color: #010218; /* Color de los enlaces negro */
+    text-decoration: none; /* Sin subrayado */
+    padding: 5px 10px; /* Espaciado alrededor del texto */
+    transition: color 0.3s ease; /* Transición suave para el color */
+    font-weight: 600; /*grosor del texto*/
+}
+
+/* Efecto hover para los enlaces */
+.menu a:hover {
+    color: #2b2f71; /* Color al pasar el ratón */
+}
+
+
+
+
+/*--------------------------Estilos a INDEX--------------------------------------*/
+.cuerpo_pagina {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+.video-background {
+    position: relative; /* Contenedor relativo para el video y el texto */
+    height: 100vh; /* Altura completa de la ventana */
+    overflow: hidden; /* Oculta cualquier desbordamiento del video */
+}
+
+video {
+    position: absolute; /* Posiciona el video dentro del contenedor */
+    top: 50%; /* Centra verticalmente el video */
+    left: 50%; /* Centra horizontalmente el video */
+    width: 100%; /* Asegura que el video cubra todo el ancho */
+    height: auto; /* Mantiene la relación de aspecto */
+    max-height: 100%; /* Limita la altura máxima */
+    z-index: 1; /* Coloca el video detrás del contenido */
+    transform: translate(-50%, -50%); /* Ajusta al centro exacto */
+    object-fit: cover; /* Ajusta el video para que cubra el contenedor */
+}
+
+
+.overlay {
+    position: relative; /* Permite que el overlay esté encima del video */
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+}
+
+.overlay h2 {
+    font-size: 5vw; /* Tamaño flexible según el ancho de la pantalla */
+    text-align: start; /* Centra el texto */
+    color: rgb(255, 255, 255); /* Color del texto */
+    padding-top: 80px; /* Espaciado superior */
+    margin: 0 90px; /* Centra horizontalmente */
+    max-width: 500px; /* Limita el ancho máximo */
+}
+
+.banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+}
+
+
+.imagen-circular {
+    width: 100px; /* Ajusta el tamaño según lo necesario */
+    height: 100px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    margin-right: 10px; /* Espaciado entre imagen y texto */
+}
+
+/* Estilos para los productos destacados */
+.cuerpo_pagina section {
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.cuerpo_pagina h2 {
+    margin-bottom: 20px; /* Margen inferior para separar del contenido */
+}
+
+.product_one {
+    display: inline-block; /* Permite que los productos se alineen horizontalmente */
+    background-color: #fff; /* Fondo blanco para cada producto */
+    border: 2px solid #919190; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    margin: 10px; /* Margen entre productos */
+    box-shadow: 0 20px 5px #0000001a; /* Sombra suave */
+    width: 250px; /* Ancho fijo para cada producto */
+    text-align: center; /* Alineación de texto a la izquierda */
+    transition: transform 0.3s; /* Transición suave al pasar el ratón */
+}
+
+.product_one:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+.cuerpo_pagina img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+/* Estilos para la sección de marcas */
+.marcas {
+    display: flex; /* Usamos flexbox para alinear las marcas */
+    justify-content: space-between; /* Espacio igual entre las marcas */
+    margin: 20px 0; /* Espaciado vertical */
+}
+
+.marca {
+    flex: 1; /* Cada marca ocupará el mismo espacio */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+    padding: 10px; /* Espacio interno, si lo deseas */
+}
+
+.marca img {
+    max-width: 100%; /* Asegura que la imagen no exceda el contenedor */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 0;
+}
+
+
+
+
+
+/*--------------------------Estilos a PRODUCTOS--------------------------------------*/
+.container_productos {
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+/* Estilos para la sección de productos */
+.container_productos h2 {
+    margin-bottom: 20px; /* Margen inferior para separar del contenido */
+}
+
+/* Estilos para los productos */
+.productos {
+    display: flex; /* Usar flexbox para alinear los productos */
+    flex-wrap: wrap; /* Permite que los productos se envuelvan en la fila */
+    justify-content: center; /* Centra los productos horizontalmente */
+}
+
+/* Estilo para cada producto */
+.producto {
+    background-color: #fff; /* Fondo blanco para cada producto */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 20px; /* Margen entre productos */
+    box-shadow: 0 2px 5px #001a; /* Sombra suave */
+    width: calc(25% - 20px); /* Ancho del 25% menos márgenes para 4 productos por fila */
+    text-align: center; /* Alineación de texto a la izquierda */
+    transition: transform 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto de escala al pasar el ratón sobre los productos */
+.producto:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+
+/* Estilo para las imágenes de los productos */
+.producto img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilo para el precio */
+.precio {
+    font-size: 1.2em; /* Tamaño de fuente del precio */
+    color: #128d2f; /* Color verde para el precio */
+    margin-top: 15px; /* Margen superior */
+}
+
+
+
+/*--------------------------Estilos de CONTACTO--------------------------------------*/
+
+#main_contacto {
+    display: flex; /* Usamos flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre la sección de info y el formulario */
+    padding: 25px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Color de fondo */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Sección de información de la empresa */
+.box-info {
+    flex: 1; /* Ocupa el 50% del ancho */
+    margin-top: 40px; /* Margen superior para que esté más abajo */
+}
+
+.box-info h1 {
+    margin: 20px 5px;
+}
+
+/* Estilo para la información */
+.data {
+    background-color: transparent; /* Sin fondo */
+    display: flex; /* Para alinear verticalmente */
+    flex-direction: column; /* Coloca los elementos en columna */
+}
+
+.data p {
+    font-size: 1.3em; /* Aumenta el tamaño del texto */
+    margin: 10px 20px; /* Margen entre los párrafos */
+    display: flex; /* Alinea los iconos y texto */
+    align-items: center; /* Centra verticalmente */
+}
+
+.icon {
+    font-size: 1.5em; /* Aumenta el tamaño de los iconos */
+    margin-right: 10px; /* Espacio a la derecha del icono */
+}
+
+.map-container {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    max-width: 600px; /* Ancho máximo para el iframe */
+    margin: 20px auto; /* Centrado y margen superior/inferior */
+    overflow: hidden; /* Asegura que nada se desborde */
+}
+
+.map-container iframe {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 300px; /* Ajusta la altura según sea necesario */
+    border: 0; /* Sin borde */
+}
+
+/* Estilos para el formulario de contacto */
+#form {
+    background-color: #cccccc0a; /* Fondo blanco */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 40px; /* Bordes redondeados */
+    padding: 40px; /* Espaciado interno */
+    flex: 0.5;
+}
+
+/* Estilo para las etiquetas del formulario 
+#form label {
+    margin-bottom: 10px;  Margen inferior 
+    font-weight: 700;  Grosor del texto 
+    color: #474745;
+} */
+
+
+/* Contenedor para inputs e iconos */
+.input-container {
+    position: relative; /* Para posicionar el icono dentro */
+}
+
+/* Estilo para los campos de entrada del formulario */
+#form input[type="text"],
+#form input[type="email"],
+#form input[type="tel"]{
+        background-color: #edfff0; /* Color de fondo */
+        width: calc(100% - 30px); /* Ancho con margen interno */
+        padding: 25px; /* Espaciado interno */
+        margin-bottom: 40px; /* Margen inferior */
+        border: 2px solid #f0faf1; /* Borde gris claro */
+        border-radius: 30px; /* Bordes redondeados */
+        outline: none; /* Elimina el borde interno al hacer clic */
+}
+
+#form textarea{
+    background-color: #edfff0; /* Color de fondo */
+    width: calc(100% - 30px); /* Ancho con margen interno */
+    padding: 25px 40px 80px 25px; /* Espaciado interno */
+    margin-bottom: 40px; /* Margen inferior */
+    border: 2px solid #f0faf1; /* Borde gris claro */
+    border-radius: 30px; /* Bordes redondeados */
+    outline: none; /* Elimina el borde interno al hacer clic */
+}
+
+/* Estilos para los placeholders */
+input::placeholder,
+textarea::placeholder {
+    color: #0c0c0c; /* Color suave */
+    opacity: 1; /* Asegura que sea completamente visible */
+}
+
+/* Aumentar el tamaño del placeholder al centrarse */
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #7a7a7a; /* Color más oscuro cuando el input está enfocado */
+}
+
+/* Icono dentro del input */
+.input-container .icon {
+    position: absolute; /* Posicionamiento absoluto */
+    right: 40px; /* Espacio desde la derecha */
+    top: 35%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta la posición */
+    color: #888; /* Color menos resaltante */
+    font-size: 1em; /* Tamaño del icono */
+}
+
+/* Estilo para el botón de enviar */
+.btn-submit {
+    background-color: #807d7dc0; /* Color de fondo */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    padding: 20px 60px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: auto; /* Centra el botón */
+    display: block; /* Cambia el botón a bloque para centrarlo */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efecto hover para el botón de enviar */
+.btn-submit:hover {
+    background-color: #0f6813af; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+
+
+
+
+
+
+/*--------------------------RESPONSIVIDAD--------------------------------------*/
+@media (max-width: 900px) {
+    .cabeza_pagina {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea a la izquierda */
+        padding: 10px 20px; /* Ajusta el padding */
+    }
+
+    .categorias {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra elementos */
+    }
+
+    .producto {
+        width: calc(100% - 40px); /* Ancho completo menos márgenes */
+        margin: 10px 0; /* Margen vertical */
+    }
+
+    #main_contacto {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    
+    .box-info, #form {
+        width: 100%; /* Ancho completo en dispositivos pequeños */
+        margin-top: 20px; /* Añade margen superior */
+    }
+}
+
+@media (max-width: 600px) {
+    .cuerpo_pagina h2, .container_productos h2, .contact {
+        font-size: 2em; /* Reduce el tamaño del texto en encabezados */
+    }
+
+    .cabeza_pagina {
+        padding: 10px 10px; /* Reduce el padding */
+    }
+
+    .logo-container {
+        margin: 0; /* Elimina márgenes */
+    }
+
+    .menu {
+        margin: 0 10px; /* Reduce margen entre elementos del menú */
+    }
+
+    .btn-submit {
+        padding: 10px; /* Ajusta el padding del botón */
+        font-size: 1em; /* Tamaño de fuente del botón */
+    }
+}
+
+
+
+/*--------------------------Estilos del FOOTER--------------------------------------*/
+footer {
+    background: linear-gradient(rgba(16, 14, 14, 0.9), rgba(0, 0, 0, 0.8)), url(/img-generales/fondo_footer.webp);
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    padding: 50px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    height: auto; /* Permite que el footer ajuste su altura según el contenido */
+}
+
+.redes {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+}
+
+.redes li {
+    display: inline; /* Muestra los elementos en línea */
+    margin: 0 20px; /* Margen horizontal entre iconos */
+}
+
+.redes a {
+    color: #fff; /* Color de los iconos */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.8em; /* Tamaño de los iconos */
+    transition: color 0.3s; /* Transición suave para el color */
+}
+
+.redes a:hover {
+    color: #d0cfcb99; /* Color de los iconos al pasar el ratón */
+}
+
+#copyright {
+    margin-top: 40px; /* Margen superior */
+    font-size: 1.1em; /* Tamaño de fuente más pequeño */
+    color: #fff;
+}
